@@ -63,7 +63,14 @@ h2 {
 }
 
 span {
-    display: inline-block;
+    font-size: 12px;
+    color: var(--cor02);
+    text-align: right;
+}
+
+#span-minutos {
+    position: relative;
+    left: 25px;
 }
 
 .relogio {
@@ -73,12 +80,7 @@ span {
     font-size: 64px;
 }
 
-span {
-    display: block;
-    font-size: 12px;
-    color: var(--cor02);
-    text-align: center;
-}
+
 
 h3 {
     display: none;
