@@ -12,10 +12,10 @@ const contagem_regressiva = setInterval(() => {
     const agora = new Date().getTime();
     const distancia = dataFinal - agora;
 
-    let dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-    let horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-    let segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+    let dias = String(Math.floor(distancia / (1000 * 60 * 60 * 24))).padStart(2, '0');
+    let horas = String(Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+    let minutos = String(Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+    let segundos = String(Math.floor((distancia % (1000 * 60)) / 1000)).padStart(2, '0');
 
     DIAS.innerText = dias;
     HORAS.innerText = horas;
