@@ -26,4 +26,4 @@ const contagem_regressiva = setInterval(() => {
         clearInterval(contagem_regressiva);
         podeComer.style.display = 'block';
     }
-}, 1000) 
+}, 1000);
